@@ -10,9 +10,68 @@ Bienvenido a EncryptorX, una aplicación de escritorio para Windows diseñada pa
 *   **Actualizaciones Automáticas:** El programa verifica si hay nuevas versiones disponibles en el repositorio de GitHub y notifica al usuario.
 *   **Código Abierto:** El proyecto es completamente de código abierto, permitiendo su revisión, uso y modificación libremente bajo los términos de su licencia.
 
+## Instalación
+
+Puedes instalar EncryptorX usando el ejecutable `setup.exe` que se encuentra en la carpeta `dist` después de la compilación.
+
+### Instalación Gráfica
+
+Simplemente haz doble clic en `setup.exe` y sigue las instrucciones. El instalador solicitará permisos de administrador para copiar los archivos en `C:\Program Files` y registrar la aplicación.
+
+### Instalación desde la Terminal
+
+El instalador también puede ser ejecutado desde la línea de comandos.
+1.  Abre una terminal (CMD o PowerShell).
+2.  Navega hasta el directorio donde se encuentra `setup.exe`.
+3.  Ejecuta `.\setup.exe` para una instalación interactiva o `.\setup.exe -y` para una **instalación silenciosa** que acepta la licencia automáticamente.
+4.  Para desinstalar, usa `.\setup.exe --uninstall` (o `.\setup.exe --uninstall -y` para que no pida confirmación al final).
+
 ## ¿Cómo Funciona?
 
 EncryptorX toma un archivo y una contraseña proporcionada por el usuario. A partir de la contraseña, genera una clave de cifrado segura y la utiliza para encriptar el contenido del archivo con AES-256. El archivo resultante (`.enc`) contiene los datos cifrados y la información necesaria para su posterior descifrado. Solo con la contraseña original se puede revertir el proceso.
+
+## Uso desde la Terminal
+
+Una vez instalado, puedes usar `EncryptorX` directamente desde cualquier terminal gracias a que el instalador lo añade al PATH del sistema.
+
+*   **Encriptar texto:** `EncryptorX --encryter "mi texto secreto"`
+*   **Desencriptar texto:** `EncryptorX --descryter "gAAAAAB..."`
+*   **Encriptar un archivo:** `EncryptorX --encryter-arc "C:\ruta\a\mi\archivo.txt"`
+*   **Desencriptar un archivo:** `EncryptorX --descryter-arc "C:\ruta\a\mi\archivo.txt.enc"`
+*   **Abrir la interfaz gráfica:** `EncryptorX`
+
+## Instalación desde el Código Fuente (para Desarrolladores)
+
+Si prefieres no usar el instalador o quieres ejecutar la última versión directamente desde el código, puedes clonar el repositorio. Esto es ideal para usuarios de Linux, macOS o desarrolladores en Windows.
+
+**Requisitos:**
+*   Git
+*   Python 3 y pip
+
+**Pasos:**
+
+1.  **Clonar el repositorio:**
+    Abre una terminal y ejecuta el siguiente comando para descargar el código fuente.
+    ```bash
+    git clone https://github.com/tio-radio/encryterX_V2.git
+    ```
+
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd EncryptorX
+    ```
+
+3.  **Instalar las dependencias:**
+    La aplicación necesita algunas bibliotecas de Python para funcionar. Instálalas usando pip y el archivo `requirements.txt` incluido.
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+4.  **Ejecutar la aplicación:**
+    Ahora puedes usar `EncryptorX` como una herramienta de línea de comandos. Por defecto, se ejecutará en modo terminal.
+    ```bash
+    python EncryptorX.py --help
+    ```
 
 ## Compilación
 
@@ -29,6 +88,6 @@ Este proyecto se distribuye bajo la licencia especificada en el archivo `Licenci
 
 > **Descargo de Responsabilidad**
 >
-> Este software se proporciona 'tal cual', sin garantías de ningún tipo, expresas o implícitas. El autor, `el_tio_null`, no se hace responsable de ninguna pérdida de datos o daño que pueda resultar del uso (o mal uso) de esta aplicación.
+> Este software se proporciona 'tal cual', sin garantías de ningún tipo, expresas o implícitas. El autor, `tio radio`, no se hace responsable de ninguna pérdida de datos o daño que pueda resultar del uso (o mal uso) de esta aplicación.
 >
 > **¡Es fundamental que realices copias de seguridad de tus archivos importantes antes de cifrarlos!**
