@@ -1,30 +1,36 @@
 # EncryptorX
 
-Bienvenido a EncryptorX, una aplicación de escritorio para Windows diseñada para proteger tus archivos mediante un cifrado robusto. Desarrollada en Python, ofrece una solución sencilla y eficaz para asegurar tu información sensible.
+Bienvenido a EncryptorX, una aplicación de escritorio para Windows diseñada para proteger tus archivos mediante un cifrado robusto. Desarrollada en Python, ofrece una solución sencilla y eficaz para asegurar tu información sensible, funcionando tanto con una interfaz gráfica como desde la línea de comandos.
 
 ## Características Principales
 
-*   **Cifrado Fuerte:** Utiliza el algoritmo AES-256 (a través de la biblioteca `cryptography`), uno de los estándares de cifrado más seguros y utilizados a nivel mundial.
-*   **Interfaz Gráfica Sencilla:** Una ventana intuitiva creada con Tkinter que permite cifrar y descifrar archivos fácilmente.
-*   **Arrastrar y Soltar (Drag & Drop):** Agiliza el proceso permitiendo arrastrar archivos directamente a la aplicación.
-*   **Actualizaciones Automáticas:** El programa verifica si hay nuevas versiones disponibles en el repositorio de GitHub y notifica al usuario.
-*   **Código Abierto:** El proyecto es completamente de código abierto, permitiendo su revisión, uso y modificación libremente bajo los términos de su licencia.
+*   **Cifrado Fuerte:** Utiliza el algoritmo AES-256 para asegurar tus datos.
+*   **Interfaz Dual:** Funciona tanto con una interfaz gráfica (GUI) como desde la línea de comandos (CLI).
+*   **Instalación Sencilla:** Instala la aplicación con un solo comando desde la terminal.
+*   **Actualizaciones Automáticas:** Notifica y permite instalar nuevas versiones directamente.
+*   **Código Abierto:** Totalmente de código abierto y disponible en GitHub.
 
 ## Instalación
 
-Puedes instalar EncryptorX usando el ejecutable `setup.exe` que se encuentra en la carpeta `dist` después de la compilación.
+Puedes instalar EncryptorX de dos maneras:
 
-### Instalación Gráfica
+### 1. Instalación Automática (Recomendado)
 
-Simplemente haz doble clic en `setup.exe` y sigue las instrucciones. El instalador solicitará permisos de administrador para copiar los archivos en `C:\Program Files` y registrar la aplicación.
+Este es el método más rápido y fácil. Abre una terminal (PowerShell o CMD) o el diálogo Ejecutar (`Win + R`) y pega el siguiente comando. Descargará e instalará la última versión de forma automática.
+```powershell
+powershell -command "Invoke-WebRequest -Uri 'https://github.com/ghostmoai/encryterX_V2/releases/latest/download/setup.exe' -OutFile '$env:TEMP\setup.exe'; Start-Process '$env:TEMP\setup.exe' -ArgumentList '-y' -Verb RunAs"
+```
 
-### Instalación desde la Terminal
+**Opción 2: Instalación Manual**
+Si ya has descargado `setup.exe`, navega a su ubicación en una terminal y ejecuta `.\setup.exe` para una instalación interactiva, o `.\setup.exe -y` para una instalación silenciosa. Para desinstalar, usa `.\setup.exe --uninstall`.
+### Otros Métodos
 
-El instalador también puede ser ejecutado desde la línea de comandos.
-1.  Abre una terminal (CMD o PowerShell).
-2.  Navega hasta el directorio donde se encuentra `setup.exe`.
-3.  Ejecuta `.\setup.exe` para una instalación interactiva o `.\setup.exe -y` para una **instalación silenciosa** que acepta la licencia automáticamente.
-4.  Para desinstalar, usa `.\setup.exe --uninstall` (o `.\setup.exe --uninstall -y` para que no pida confirmación al final).
+*   **Instalación Gráfica:** Descarga `setup.exe` desde la página de releases de GitHub, haz doble clic en el archivo y sigue las instrucciones.
+
+*   **Desinstalación:** Puedes desinstalar la aplicación desde "Agregar o quitar programas" en Windows, o ejecutar el siguiente comando en una terminal para una desinstalación silenciosa:
+    ```powershell
+    powershell -command "& 'C:\Program Files\EncryptorX\setup.exe' --uninstall -y"
+    ```
 
 ## ¿Cómo Funciona?
 
@@ -40,9 +46,9 @@ Una vez instalado, puedes usar `EncryptorX` directamente desde cualquier termina
 *   **Desencriptar un archivo:** `EncryptorX --descryter-arc "C:\ruta\a\mi\archivo.txt.enc"`
 *   **Abrir la interfaz gráfica:** `EncryptorX`
 
-## Instalación desde el Código Fuente (para Desarrolladores)
+## Ejecución Directa desde la Terminal (Avanzado)
 
-Si prefieres no usar el instalador o quieres ejecutar la última versión directamente desde el código, puedes clonar el repositorio. Esto es ideal para usuarios de Linux, macOS o desarrolladores en Windows.
+Para usuarios avanzados o desarrolladores que deseen ejecutar la aplicación directamente desde el código fuente, pueden hacerlo siguiendo estos pasos en una terminal.
 
 **Requisitos:**
 *   Git
@@ -50,25 +56,24 @@ Si prefieres no usar el instalador o quieres ejecutar la última versión direct
 
 **Pasos:**
 
-1.  **Clonar el repositorio:**
-    Abre una terminal y ejecuta el siguiente comando para descargar el código fuente.
+1.  **Descargar el código :**
     ```bash
-    git clone https://github.com/tio-radio/encryterX_V2.git
+    git clone https://github.com/ghostmoai/encryterX_V2.git
     ```
 
-2.  **Navegar al directorio del proyecto:**
+2.  **Navegar al directorio:**
     ```bash
-    cd EncryptorX
+    cd encryterX_V2
     ```
 
-3.  **Instalar las dependencias:**
-    La aplicación necesita algunas bibliotecas de Python para funcionar. Instálalas usando pip y el archivo `requirements.txt` incluido.
+3.  **Instalar dependencias:**
+    La aplicación necesita algunas bibliotecas para funcionar. Instálalas con el siguiente comando:
     ```bash
     pip install -r requirements.txt
     ```
 
-4.  **Ejecutar la aplicación:**
-    Ahora puedes usar `EncryptorX` como una herramienta de línea de comandos. Por defecto, se ejecutará en modo terminal.
+4.  **Ejecutar:**
+    Ahora puedes usar la aplicación como una herramienta de línea de comandos.
     ```bash
     python EncryptorX.py --help
     ```
@@ -88,6 +93,6 @@ Este proyecto se distribuye bajo la licencia especificada en el archivo `Licenci
 
 > **Descargo de Responsabilidad**
 >
-> Este software se proporciona 'tal cual', sin garantías de ningún tipo, expresas o implícitas. El autor, `tio radio`, no se hace responsable de ninguna pérdida de datos o daño que pueda resultar del uso (o mal uso) de esta aplicación.
+> Este software se proporciona 'tal cual', sin garantías de ningún tipo, expresas o implícitas. El autor, `ghostmoai`, no se hace responsable de ninguna pérdida de datos o daño que pueda resultar del uso (o mal uso) de esta aplicación.
 >
 > **¡Es fundamental que realices copias de seguridad de tus archivos importantes antes de cifrarlos!**
