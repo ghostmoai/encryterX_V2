@@ -1,39 +1,95 @@
-LICENCIA PÚBLICA DE USO – ENCRYPTORX
+LICENCIA PUBLICA DE USO – ENCRYPTORX
+
 © 2025 ghost_moia
 
-Esta licencia permite el uso público, gratuito y sin restricciones comerciales del software EncryptorX, con las siguientes condiciones:
+EncryptorX es un proyecto personal de ghost_moia, creado con interes propio en la programacion y la seguridad, y publicado para que la gente lo pueda probar, usar y experimentar bajo las condiciones que se describen a continuacion.
 
 1. USO PERMITIDO
-   - Puedes usar EncryptorX en proyectos personales, educativos, creativos o en videojuegos no comerciales.
-   - Se permite su distribución siempre que se conserve esta licencia intacta.
-   - Puedes modificar el código solo para fines personales y no maliciosos.
+
+Se permite el uso de EncryptorX en proyectos personales, trabajos escolares, investigacion, pruebas de programacion o incluso en videojuegos que no tengan fines lucrativos.
+
+Tambien se permite distribuir el programa, siempre y cuando se conserve el texto de esta licencia de forma integra, sin quitar ni agregar lineas que cambien su sentido original.
+
+El codigo puede ser modificado por el usuario, pero solo para uso propio y nunca con intenciones malisiosas o daninas hacia otras personas.
+
+El objetivo del creador es compartir su trabajo con la comunidad y que otros puedan probarlo, aprender o experimentar, siempre respetando esta licencia.
 
 2. USO PROHIBIDO
-   - Queda totalmente prohibido utilizar EncryptorX para:
-     • Crear malware, spyware, adware u otro software malicioso.
-     • Propósitos ilegales, incluidos ciberataques, ransomware o manipulación de datos ajenos.
-     • Distribuirlo o integrarlo en sistemas de empresas sin consentimiento del autor.
 
-3. PROTECCIÓN DEL CÓDIGO
-   - Este software incluye un sistema de integridad que detecta cambios, restaura el código original y registra actividades sospechosas.
-   - Se prohíbe la manipulación del código con fines de ingeniería inversa o evasión de sus medidas de seguridad.
+Queda terminantemente prohibido usar EncryptorX para crear o distribuir malware, spyware, adware, virus, troyanos o cualquier software que dañe sistemas ajenos.
 
-4. ACTUALIZACIONES AUTOMÁTICAS
-   - EncryptorX verifica automáticamente nuevas versiones en GitHub.
-   - Si hay una versión más reciente, se descargará e instalará sin intervención del usuario.
+No se puede utilizar para ciberataques, ransomware, robo de datos o manipulacion de informacion sin permiso.
+
+Esta prohibido distribuir el programa como si fuera propio o integrarlo en sistemas empresariales sin el concentimiento directo y escrito del creador.
+
+En pocas palabras: si el uso es para hacer daño, robar, o ganar dinero a costa del trabajo del autor sin permiso, esta totalmente prohibido.
+
+3. PROTECCION DEL CODIGO
+
+El software incluye mecanismos de integridad interna, que revisan el codigo, detectan alteraciones y en caso de manipulacion pueden restaurar el codigo original o registrar actividades sospechosas.
+
+Esta prohibido modificar esos mecanismos, intentar desabilitarlos o hacer ingenieria inversa con el fin de saltarse la seguridad.
+
+Quien intente hacerlo estara rompiendo directamente esta licencia y puede enfrentar acciones legales serias dependiendo de la ley de su pais.
+
+4. ACTUALIZACIONES AUTOMATICAS
+
+EncryptorX posee un sistema que verifica en GitHub si existe una version mas reciente.
+
+Cuando se detecta una actualizacion, el programa puede descargarla e instalarla automaticamente, sin que el usuario tenga que intervenir.
+
+Esto asegura que siempre se use una version estable, segura y actualizada.
+
+El usuario acepta que este sistema de actualisacion es parte integral del software y que no debe ser alterado.
 
 5. RESPONSABILIDAD LEGAL
-   - ghost_moia (el creador) no se hace responsable por daños, pérdidas, muertes o delitos cometidos con este software.
-   - En caso de uso para actos terroristas, ataques a infraestructura o actividades ilegales, toda responsabilidad recaerá en el usuario infractor.
+
+ghost_moia, el creador, no es responsable de los danos que este software pueda causar si alguien lo usa de manera inapropiada.
+
+El software fue publicado para que la gente lo pruebe y lo use de forma legal y legitima, no para cometer delitos.
+
+Si alguien lo utiliza en ataques informaticos, actos terroristas, manipulacion de infraestructura, robo de datos o cualquier actividad ilegal, toda la responsabilidad recaera en el usuario infractor.
+
+El creador no cubrira danos, perdidas economicas, ni respondra por juicios, demandas o multas relacionadas con el mal uso del programa.
 
 6. LICENCIA NO COMERCIAL
-   - No se permite usar EncryptorX en empresas o fines lucrativos sin autorización directa de ghost_moia.
-   - Para licencias comerciales: contactar a **EncryterX@gmail.com**
+
+Esta prohibido usar EncryptorX con fines de negocio, empresa o cualquier actividad lucrativa, a menos que se cuente con una autorizacion expresa de ghost_moia.
+
+Esto significa que no puede venderse, alquilarse, ni incluirse en servicios pagos sin un acuerdo previo.
+
+En caso de que alguna empresa desee usarlo, debera solicitar una licencia comercial escribiendo a: EncryterX@gmail.com
+
+De lo contrario, su uso se considerara ilegal y fraudulento, con posibles consecuencias legales.
 
 7. ACCIONES LEGALES
-   - El incumplimiento de esta licencia podrá derivar en acciones legales.
-   - Está prohibido publicar este software en sitios +18, sitios no autorizados o utilizarlo para prácticas éticamente cuestionables.
 
----
+Si se incumple cualquiera de los puntos de esta licencia, el creador o sus representantes podran iniciar acciones legales contra el infractor.
 
-AL UTILIZAR ESTE SOFTWARE, USTED ACEPTA ESTA LICENCIA EN SU TOTALIDAD.
+Publicar este software en sitios no autorizados, foros ilegales, webs +18 o paginas de dudosa reputacion esta expresamente prohibido.
+
+Igualmente, usarlo para fines eticamente cuestionables (ejemplo: hackeo con intencion de lucro o espionaje personal) tambien constituye una violacion.
+
+El creador se reserva el derecho de solicitar la eliminacion inmediata de copias no autorizadas, y en caso de negativa, recurrir a las instancias judiciales que correspondan en cada pais.
+
+8. MENCION Y COLOCACION DE LA LICENCIA
+
+Si alguien crea un proyecto, app, fork, instalador, paquete, o cualquier distribucion basada en EncryptorX y no incluye la mension al autor ni el texto de esta licencia en un lugar visible (ej. README del repo, about de la app, instalador o carpeta del proyecto), sera notificado por el titular o sus representantes.
+
+La notificacion tendra como objetivo que el autor del proyecto incorpore la mension y la licencia en un plazo razonable.
+
+Si el autor del proyecto no cumple con la notificacion ni incorpora la mension/licencia dentro del plazo indicado, el titular podra exigir la eliminacion del contenido o la correccion inmediata.
+
+Si aun asi no se acepta ni se cumple, se podran iniciar acciones legales o reclamaciones segun corresponda en la jurisdiccion del caso (demanda civil, solicitud de retirada, o llevar el caso a juicio segun la ley local).
+
+9. COPIA, DEMANDAS Y COPYRIGHT
+
+Este es un proyecto personal de ghost_moia, por lo tanto el creador no podra ser demandado por copyright en cuanto al uso publico segun esta licencia.
+
+Si alguien copia y pega el codigo para fines no permitidos (como uso comercial, apropiacion indebida o difusion sin la licencia), esa persona podra ser demandada por violacion de copyright.
+
+Antes de iniciar una demanda, el infractor sera notificado y se le dara la oportunidad de borrar el contenido o aceptar la licencia.
+
+Si se niega, segun el pais y la ley local, podra enfrentarse a un juicio civil o penal.
+
+AL UTILIZAR ESTE SOFTWARE, USTED ACEPTA ESTA LICENCIA EN SU TOTALIDAD
